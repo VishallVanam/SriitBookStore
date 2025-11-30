@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Times New Roman","Consolas",sans-serif;
+}
+
+/* ====== ADDED: background image for the WHOLE PAGE (points 2 & 3) ====== */
+body {
+    background-image: url("page-background.jpg");   /* put your image name here */
+    background-repeat: repeat;                     /* tiles the image on page   */
+}
+
+/* ====== ADDED: different font styles for headings & paragraphs (point 1) ====== */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+}
+
+/* ====== CHANGED: link styles to use :link, :visited, :active, :hover (point 4) ====== */
+/* (this replaces your old `a {}` and `a:hover {}` rules) */
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    text-decoration: none;
+    color: purple;
+}
+
+a:active {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+/* ====== END of link styles ====== */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;              
+    padding: 0 40px;           
+
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 55px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    padding: 0 25px;           
+    height: 100%;
+    display: flex;
+    align-items: center;       
+    color: black;
+    font-weight: 600;
+    border-left: 1px solid #dddddd;
+}
+
+.menu a:hover {
+    background: white;
+    color: #0056a6;
+}
+
+/* ====== ADDED: single element with its OWN background image (points 2 & 3) ====== */
+/* Use this on any <div> in your HTML:  <div class="single-bg"> ... </div> */
+.single-bg {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+
+    background-image: url("box-background.jpg");  /* another image name */
+    background-repeat: no-repeat;                 /* no repeating here  */
+
+    border: 1px solid #000;
+}

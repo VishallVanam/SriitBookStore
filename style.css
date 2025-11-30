@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Times New Roman","Consolas",sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;              
+    padding: 0 40px;           
+
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 55px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    padding: 0 25px;           
+    height: 100%;
+    display: flex;
+    align-items: center;       
+    color: black;
+    font-weight: 600;
+    border-left: 1px solid #dddddd;
+}
+
+.menu a:hover {
+    background: white;
+    color: #0056a6;
+}
